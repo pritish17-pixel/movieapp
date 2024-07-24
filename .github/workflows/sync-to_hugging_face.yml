@@ -25,5 +25,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote set-url origin https://Pritishmishra17:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Pritishmishra17/movie-recommendation-app
-          git push origin main --force
+          git remote set-url origin https://huggingface.co/spaces/Pritishmishra17/movie-recommendation-app
+          git push https://${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Pritishmishra17/movie-recommendation-app main --force
